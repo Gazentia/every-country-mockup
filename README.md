@@ -1,7 +1,7 @@
 <div id="top"></div>
 <div align="center">
   <a href="https://github.com/Gazentia/frontend-webpack-boilerplate">
-<img src="./readme-assets/banner.jpg" align="center"/>
+<img src="./src/assets/images/favicon.png" align="center"/>
   </a>
   <br/>
   <br/>
