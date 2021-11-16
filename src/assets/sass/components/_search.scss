@@ -1,0 +1,64 @@
+.search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    top: 30%;
+    align-self: center;
+    @include breakpoint-up("md") {
+        align-items: flex-end;
+    }
+
+    &__info {
+        text-align: center;
+        @include breakpoint-up("md") {
+            text-align: right;
+        }
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-size: 7.5rem;
+        font-weight: 400;
+
+        @include breakpoint-up("md") {
+            font-size: 9.375rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: $font-md;
+        @include breakpoint-up("md") {
+            font-size: $font-lg;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        @include breakpoint-up("md") {
+            justify-content: flex-end;
+        }
+
+        input {
+            width: 100%;
+            text-align: center;
+            @include breakpoint-up("md") {
+                max-width: 380px;
+                text-align: left;
+            }
+
+            &::placeholder {
+                font-size: $font-md;
+
+                @include breakpoint-up("md") {
+                    font-size: $font-lg;
+                }
+            }
+        }
+    }
+}

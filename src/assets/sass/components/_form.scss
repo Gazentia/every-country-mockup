@@ -1,0 +1,36 @@
+.form {
+    &__icon {
+        fill: $white;
+        width: 20px;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 2px);
+        transform: translateY(-50%);
+    }
+    &__control {
+        position: relative;
+        display: inline-block;
+    }
+    &__input {
+        border-color: $white;
+        border-width: 0 0 2px 0;
+        background-color: transparent;
+        font-family: inherit;
+        color: $white;
+        font-weight: 300;
+        padding: 10px 20px;
+        font-size: $font-lg;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $white;
+        }
+
+        &--icon {
+            padding-left: 36px;
+        }
+    }
+}
