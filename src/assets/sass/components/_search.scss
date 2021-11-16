@@ -19,9 +19,11 @@
 
     &__title {
         margin: 0 0 20px 0;
-        font-size: 7.5rem;
+        font-size: 5rem;
         font-weight: 400;
-
+        @include breakpoint-up("sm") {
+            font-size: 7.5rem;
+        }
         @include breakpoint-up("md") {
             font-size: 9.375rem;
         }

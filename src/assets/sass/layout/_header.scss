@@ -14,7 +14,10 @@
         margin-right: 50px;
     }
     &__brand {
-        font-size: $font-lg;
+        font-size: $font-md;
+        @include breakpoint-up("sm") {
+            font-size: $font-lg;
+        }
     }
     &__menu {
         margin-left: auto;

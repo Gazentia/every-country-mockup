@@ -1,23 +1,28 @@
 .footer {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     display: inline-block;
     bottom: 0;
-    padding: 10px 30px;
+    padding: 20px 30px;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-
+    width: 100%;
     @include breakpoint-up("md") {
         padding: 10px 50px;
         text-align: right;
         right: 0;
         transform: translateX(0);
+        width: auto;
     }
 
     &__credit {
         margin: 0;
         font-weight: 300;
-        font-size: $font-xs;
+        font-size: 0.5rem;
+
+        @include breakpoint-up("md") {
+            font-size: $font-xs;
+        }
     }
 }
